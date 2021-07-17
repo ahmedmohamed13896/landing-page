@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <title>Landing Page</title>
+</head>
+
+<body class="landing-page">
+    <!-- start login -->
+    <section class="login-container container d-flex flex-column justify-content-center align-items-center ">
+
+        <div class="title-top">
+            Social and Emotional Learning (SEL) <br>
+            Workbook Creator
+        </div>
+
+        <form class="row login-form">
+            <div class="col-12 mb-3">
+                <div class="input-group has-validation">
+                    <input type="text" class="form-control " placeholder="Username" id="username" name="username" onkeyup="checkValid()">
+                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 mb-3">
+                <div class="input-group has-validation">
+                    <input type="password" class="form-control" placeholder="Password" id="password" name="password" onkeyup="checkValid()">
+                    <div id="validationServerPasswordFeedback" class="invalid-feedback">
+                        Please choose a Password.
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <button type="button" class="btn btn-primary submit-btn">Login</button>
+            </div>
+            <div class="col-12">
+                <a class="forgot-passowrd" href="#">
+                    Forgot Password?
+                </a>
+            </div>
+        </form>
+        </div>
+
+
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/bootstrap.min.js"></script>
+        <script src="assets/js/main.js"></script>
+</body>
+
+</html>

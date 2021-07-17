@@ -95,7 +95,7 @@ body.landing-page{
 }
 
 
-@media (max-width:1366px) and (min-height:625px) {
+@media (max-width:1366px) and (min-height:769px) {
      body.landing-page {
         background-size: contain !important;
     }

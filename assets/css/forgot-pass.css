@@ -21,27 +21,27 @@ body.forget-password{
     justify-content: flex-start !important;
 }
 .forget-password .title-top{
-    /* color: #00267a; */
     color: #fff;
     font-family: 'Garamond-Medium';
     text-align: center;
     font-size: 1.8rem;
     line-height: 1.1;
-    margin-top: 2rem;
-    margin-bottom: auto;
+    margin: auto;
+    margin-bottom: 1rem;
     padding: 1rem;
-    padding-right: 6rem;
 }
 
 .forget-password .login-form{
     margin-bottom: 1rem;
     max-width: 500px;
+    margin-top: 0;
     margin: auto;
     width: 90%;
     padding: 1.5rem .7rem 1.5rem;
     background-color: rgba(8, 8, 8,  0.5);
     border-radius: .5rem;
     box-shadow: 0px 1px 9px -3px #a7a7a7;
+    margin-top: 0;
 }
 .forget-password .login-form .sendMail-btn{
     display: block;
@@ -107,7 +107,7 @@ body.forget-password{
 @media (max-width:992px) and (orientation:landscape){
     .forget-password .login-form{
         padding: 1rem .5rem;
-        margin: auto;
+        
     }
 
 }

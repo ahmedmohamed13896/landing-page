@@ -24,35 +24,29 @@
         <form class="row login-form">
             <div class="col-12 mb-3">
                 <div class="input-group has-validation">
-                    <input type="text" class="form-control " placeholder="Username" id="username" name="username" onkeyup="checkValid()">
-                    <div id="validationServerUsernameFeedback" class="invalid-feedback">
-                        Please choose a username.
-                    </div>
+                    <input type="text" class="form-control " placeholder="Username" id="username" name="username" onkeyup="checkValid()" onkeypress="validateName(event)">
                 </div>
             </div>
             <div class="col-12 mb-3">
                 <div class="input-group has-validation">
                     <input type="password" class="form-control" placeholder="Password" id="password" name="password" onkeyup="checkValid()">
-                    <div id="validationServerPasswordFeedback" class="invalid-feedback">
-                        Please choose a Password.
-                    </div>
                 </div>
             </div>
             <div class="col-12">
-                <button type="button" class="btn btn-primary submit-btn">Login</button>
+                <button type="button" class="btn btn-primary login-btn">Login</button>
             </div>
             <div class="col-12">
-                <a class="forgot-passowrd" href="#">
+                <a class="forgot-passowrd" href="forgot-password.html">
                     Forgot Password?
                 </a>
             </div>
         </form>
-        </div>
+    </section>
 
 
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/bootstrap.min.js"></script>
-        <script src="assets/js/main.js"></script>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/main.js"></script>
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 html,body{
     padding: 0;
 }
-body.landing-page{
+body.account-info{
     position: relative;
     min-height: 100vh;
     height: auto;
@@ -17,14 +17,14 @@ body.landing-page{
     justify-content: center;
     align-items: center;
 }
-.landing-page .login-container{
+.account-info .info-container{
     min-height: 100vh;
     height: fit-content;
     overflow: hidden;
     padding-bottom: 1.5rem;
     justify-content: flex-start !important;
 }
-.landing-page .title-top{
+.account-info .title-top{
     /* color: #00267a; */
     color: #fff;
     font-family: 'Garamond-Medium';
@@ -37,7 +37,7 @@ body.landing-page{
     padding-right: 6rem;
 }
 
-.landing-page .login-form{
+.account-info .info-content{
     margin-bottom: 1rem;
     max-width: 500px;
     margin: 0 auto;
@@ -47,27 +47,33 @@ body.landing-page{
     border-radius: .5rem;
     box-shadow: 0px 1px 9px -3px #a7a7a7;
 }
-.landing-page .login-form .login-btn{
-    display: block;
+
+.account-info .info-content hr{
+    background-color: #FFF;
+    opacity: 1;
+    width: 95%;
     margin: auto;
-    width: 100%;
-    max-width: 180px;
-    background-color: #c57471 !important;
-    color: #FFF;
-    border-color: #c57471;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all .3s ease-in-out;
+    margin-bottom: .25rem;
 }
 
-.landing-page .login-form .login-btn:hover,
-.landing-page .login-form .login-btn:focus{
-    box-shadow: 0px 4px 11px -8px #ffffff;
-    background-color: #ea9694 !important;
-    border: 1px solid #ea9694 !important;
+.account-info .info-content .info-text{
+    margin-bottom: .5rem;
 }
-.landing-page .login-form .forgot-passowrd{
+.account-info .info-content .info-text span{
+    display: block;
     color: #FFF;
+}
+.account-info .info-content .info-text p{
+    margin-bottom: 0;
+    padding: .5rem;
+    background: #FFF;
+    color: #333;
+    font-weight: 500;
+}
+
+
+
+.account-info .info-content .change-passowrd{
     font-size: 16px;
     line-height: 1.1;
     display: block;
@@ -77,93 +83,93 @@ body.landing-page{
     width: fit-content;
     margin-left: auto;
     margin-right: auto;
+    width: 100%;
+    max-width: 180px;
+    background-color: #c57471 !important;
+    color: #FFF;
+    border-color: #c57471;
+    cursor: pointer;
+    padding: .5rem;
+    border-radius: 5px;
+   
 }
-.landing-page .login-form .forgot-passowrd:hover{
-    text-decoration:underline;
-}
-
-.landing-page .login-form .form-control{
-    line-height: 2;
-}
-.landing-page .invalid-feedback{
-    font-weight:600;
-    color: #fff;
+.account-info .info-content .change-passowrd:hover{
+    text-decoration: none;
+    box-shadow: 0px 4px 11px -8px #ffffff;
+    background-color: #ea9694 !important;
 }
 
 /* responsive */
 @media (min-width:1400px) {
-    .landing-page .login-form{
+    .account-info .info-content{
         margin-bottom: 4rem;
     }
 }
 
 
 @media (max-width:1366px) and (min-height:992px) {
-    body.landing-page {
+    body.account-info {
         background-size: contain !important;
     }
-    .landing-page .login-form{
+    .account-info .info-content{
         margin-bottom:auto;
     }
-    .landing-page .title-top{
+    .account-info .title-top{
         margin-bottom:2rem;
     }
 
 }
 @media (max-width:1024px){
-     body.landing-page {
+     body.account-info {
         background-size: cover;
     }
 }
 
 @media (max-width:1024px) and (orientation:portrait){
-    .landing-page .login-form{
+    .account-info .info-content{
         margin:0 auto;
         margin-bottom: auto;
     }
-    .landing-page .title-top{
+    .account-info .title-top{
         margin-bottom:2rem;
         margin-top: auto;
     }
 }
 @media (max-width:1366px) and (max-height:650px) and (orientation:landscape){
-    .landing-page .title-top{
+    .account-info .title-top{
         font-size: 1.7rem;
     }
-    body.landing-page{
+    body.account-info{
         background-position: 0;
     }
 }
 @media (max-width:992px) {
-    .landing-page .title-top{
+    .account-info .title-top{
         font-size: 1.6rem;
         margin: 0 auto;
         padding: 1rem;
         padding-top: 3rem;
     }
-    .landing-page .login-form .form-control{
-        line-height: 1.4;
-    }
 }
 @media (max-width:992px) and (orientation:landscape){
-    body.landing-page {
+    body.account-info {
         background-size: cover;
     }
-    .landing-page .login-form{
+    .account-info .info-content{
         padding: 1rem .5rem;
         margin-top: auto;
     }
-    .landing-page .title-top{
+    .account-info .title-top{
         padding-top: 1rem;
     }
 }
 @media (max-width:767px) {
-    .landing-page .title-top{
+    .account-info .title-top{
         font-size: 1.2rem;
     }
 }
 @media (max-width:768px) and (orientation:portrait){
- body.landing-page {
+ body.account-info {
      background-size:contain;
  }   
 }

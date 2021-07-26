@@ -1,0 +1,117 @@
+html,body{
+    padding: 0;
+}
+body.forget-password{
+    position: relative;
+    min-height: 100vh;
+    height: auto;
+    width: 100%;
+    overflow: hidden;
+    overflow-y: auto;
+    background-color: #e99695;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.forget-password .login-container{
+    min-height: 100vh;
+    height: fit-content;
+    overflow: hidden;
+    padding: 1.5rem;
+    justify-content: flex-start !important;
+}
+.forget-password .title-top{
+    /* color: #00267a; */
+    color: #fff;
+    font-family: 'Garamond-Medium';
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 1.1;
+    margin-top: 2rem;
+    margin-bottom: auto;
+    padding: 1rem;
+    padding-right: 6rem;
+}
+
+.forget-password .login-form{
+    margin-bottom: 1rem;
+    max-width: 500px;
+    margin: auto;
+    width: 90%;
+    padding: 1.5rem .7rem 1.5rem;
+    background-color: rgba(8, 8, 8,  0.5);
+    border-radius: .5rem;
+    box-shadow: 0px 1px 9px -3px #a7a7a7;
+}
+.forget-password .login-form .sendMail-btn{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 180px;
+    background-color: #c57471 !important;
+    color: #FFF;
+    border-color: #c57471;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.forget-password .login-form .sendMail-btn:hover,
+.forget-password .login-form .sendMail-btn:focus{
+    box-shadow: 0px 4px 11px -8px #ffffff;
+    background-color: #ea9694 !important;
+    border: 1px solid #ea9694 !important;
+}
+.forget-password .login-form .forgot-passowrd{
+    color: #FFF;
+    font-size: 16px;
+    line-height: 1.1;
+    display: block;
+    text-align: center;
+    margin: 1rem auto 0;
+    text-decoration: none;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+.forget-password .login-form .forgot-passowrd:hover{
+    text-decoration:underline;
+}
+
+.forget-password .login-form .form-control{
+    line-height: 2;
+}
+.forget-password .invalid-feedback{
+    font-weight:600;
+    color: #fff;
+}
+
+.modal {
+    background-color: rgba(0 ,0 ,0 , .95);
+}
+.modal .modal-title{
+    color: #c57471;
+}
+.modal p{
+    line-height: 1.1;
+}
+
+/* responsive */
+
+
+@media (max-width:992px) {
+    .forget-password .login-form .form-control{
+        line-height: 1.4;
+    }
+}
+@media (max-width:992px) and (orientation:landscape){
+    .forget-password .login-form{
+        padding: 1rem .5rem;
+        margin: auto;
+    }
+
+}
+
+
+
+

@@ -82,10 +82,9 @@ body.account-info{
     text-align: center;
     margin: 1rem auto 0;
     text-decoration: none;
-    width: fit-content;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    width: 100%;
     max-width: 180px;
     background-color: #c57471 !important;
     color: #FFF;
@@ -93,7 +92,7 @@ body.account-info{
     cursor: pointer;
     padding: .5rem;
     border-radius: 5px;
-   
+    font-weight: bold;
 }
 .account-info .info-content .change-passowrd:hover{
     text-decoration: none;

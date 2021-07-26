@@ -99,59 +99,7 @@ body.account-info{
     box-shadow: 0px 4px 11px -8px #ffffff;
     background-color: #ea9694 !important;
 }
-.reset-container .reset-form{
-    width: 100%;
-}
 
-.reset-container .reset-form .main-btn{
-    display: block;
-    margin: auto;
-    width: 100%;
-    max-width: 180px;
-    background-color: #c57471 !important;
-    color: #FFF;
-    border-color: #c57471;
-    text-transform: uppercase;
-    font-weight: bold;
-    transition: all .3s ease-in-out;
-}
-
-.reset-container .reset-form .main-btn:hover,
-.reset-container .reset-form .main-btn:focus{
-    box-shadow: 0px 4px 11px -8px #ffffff;
-    background-color: #ea9694 !important;
-    border: 1px solid #ea9694 !important;
-}
-.reset-form .login-form .form-control{
-    line-height: 2;
-}
-.reset-form .invalid-feedback{
-    font-weight:600;
-    color: #fff;
-}
-.modal-header .btn-close {
-    border-radius: 50%;
-    background-color: #FFF;
-}
-
-
-.modal-backdrop{
-    background-color: #e99695;
-}
-.modal-backdrop.show{
-    opacity: 1;
-}
-.modal-body{
-    padding: 0;
-    padding-bottom: 1rem;
-}
-.modal-header{
-    border-bottom: 0;
-    padding-bottom: 0;
-}
-.modal-content{
-    background-color: rgba(8, 8, 8, 0.5);
-}
 
 /* responsive */
 @media (max-width:1366px) and (max-height:650px) and (orientation:landscape){

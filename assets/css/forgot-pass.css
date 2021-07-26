@@ -27,7 +27,7 @@ body.forget-password{
     font-size: 1.8rem;
     line-height: 1.1;
     margin: auto;
-    margin-bottom: 1rem;
+    margin-bottom: 0;
     padding: 1rem;
 }
 

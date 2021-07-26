@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/fonts.css">
+    <link rel="stylesheet" href="assets/css/account-info.css">
+    <title>Account Info</title>
+
+</head>
+
+<body class="account-info">
+    <!-- start info -->
+    <section class="info-container container d-flex flex-column justify-content-center align-items-center ">
+        <div class="title-top">
+            Account Info
+        </div>
+
+        <div class="row info-content">
+            <div class="col-12">
+                <div class="info-text">
+                    <span>
+                        Login Name:
+                    </span>
+                    <p id="username">
+                        Ahmed Anwer
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <div class="info-text">
+                    <span>
+                        First Name:
+                    </span>
+                    <p id="fname">
+                        Ahmed
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <div class="info-text">
+                    <span>
+                        Last Name:
+                    </span>
+                    <p id="lname">
+                        Anwer
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <div class="info-text">
+                    <span>
+                        Subscription Level:
+                    </span>
+                    <p id="subscription-level">
+                        Level 1
+                    </p>
+                </div>
+            </div>
+            <hr>
+
+            <div class="col-12">
+                <div class="info-text">
+                    <span>
+                        Expiration Date:
+                    </span>
+                    <p id="expiration-date">
+                        10-10-2021
+                    </p>
+                </div>
+            </div>
+            <hr>
+            <div class="col-12">
+                <a type="button" class="change-passowrd" href="#" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Change Password?
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- modal  -->
+
+    <!-- Vertically centered modal -->
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <!-- start reset -->
+                    <section class="reset-container container d-flex flex-column justify-content-center align-items-center ">
+                        <h2 class="title-top">
+                            Current Password
+                        </h2>
+                        <form class="row reset-form">
+                            <div class="col-12 mb-3">
+                                <div class="input-group ">
+                                    <input type="password" class="form-control" placeholder="Current Password" id="password" name="password" onkeyup="checkValid()">
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btn-primary main-btn checkPass-btn">Next</button>
+                            </div>
+                        </form>
+                    </section>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/change-password.js"></script>
+
+</body>
+
+</html>

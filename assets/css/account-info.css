@@ -9,10 +9,6 @@ body.account-info{
     overflow: hidden;
     overflow-y: auto;
     background-color: #e99695;
-    background-image: url(../images/bg.jpg);
-    background-position: bottom center;
-    background-repeat: no-repeat;
-    background-size: cover;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -31,19 +27,18 @@ body.account-info{
     text-align: center;
     font-size: 1.8rem;
     line-height: 1.1;
-    margin-top: 2rem;
-    margin-bottom: auto;
+    margin: auto;
+    margin-bottom: 0;
     padding: 1rem;
-    padding-right: 6rem;
 }
 
 .account-info .info-content{
-    margin-bottom: 1rem;
+    margin: auto;
+    margin-top: 0;
     max-width: 500px;
-    margin: 0 auto;
     width: 90%;
-    padding: 1.5rem .7rem 1.5rem;
-    background-color: rgb(8 8 8 / 50%);
+    padding: 1rem .7rem 1rem;
+    background-color: rgba(8, 8, 8, 0.5);
     border-radius: .5rem;
     box-shadow: 0px 1px 9px -3px #a7a7a7;
 }
@@ -58,17 +53,24 @@ body.account-info{
 
 .account-info .info-content .info-text{
     margin-bottom: .5rem;
+    margin-top: .5rem;
+    display: flex;
+    justify-content: flex-start;
 }
 .account-info .info-content .info-text span{
     display: block;
     color: #FFF;
+    width: 35%;
+    line-height: 1.1;
+    margin-right: 1%;
 }
 .account-info .info-content .info-text p{
     margin-bottom: 0;
-    padding: .5rem;
-    background: #FFF;
-    color: #333;
+    padding: 0 .5rem;
+    color: #fff;
     font-weight: 500;
+    flex-grow: 1;
+    background: rgba(255, 255, 255, 0.1);
 }
 
 
@@ -98,80 +100,75 @@ body.account-info{
     box-shadow: 0px 4px 11px -8px #ffffff;
     background-color: #ea9694 !important;
 }
+.reset-container .reset-form{
+    width: 100%;
+}
+
+.reset-container .reset-form .main-btn{
+    display: block;
+    margin: auto;
+    width: 100%;
+    max-width: 180px;
+    background-color: #c57471 !important;
+    color: #FFF;
+    border-color: #c57471;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .3s ease-in-out;
+}
+
+.reset-container .reset-form .main-btn:hover,
+.reset-container .reset-form .main-btn:focus{
+    box-shadow: 0px 4px 11px -8px #ffffff;
+    background-color: #ea9694 !important;
+    border: 1px solid #ea9694 !important;
+}
+.reset-form .login-form .form-control{
+    line-height: 2;
+}
+.reset-form .invalid-feedback{
+    font-weight:600;
+    color: #fff;
+}
+.modal-header .btn-close {
+    border-radius: 50%;
+    background-color: #FFF;
+}
+
+
+.modal-backdrop{
+    background-color: #e99695;
+}
+.modal-backdrop.show{
+    opacity: 1;
+}
+.modal-body{
+    padding: 0;
+    padding-bottom: 1rem;
+}
+.modal-header{
+    border-bottom: 0;
+    padding-bottom: 0;
+}
+.modal-content{
+    background-color: rgba(8, 8, 8, 0.5);
+}
 
 /* responsive */
-@media (min-width:1400px) {
-    .account-info .info-content{
-        margin-bottom: 4rem;
-    }
-}
-
-
-@media (max-width:1366px) and (min-height:992px) {
-    body.account-info {
-        background-size: contain !important;
-    }
-    .account-info .info-content{
-        margin-bottom:auto;
-    }
-    .account-info .title-top{
-        margin-bottom:2rem;
-    }
-
-}
-@media (max-width:1024px){
-     body.account-info {
-        background-size: cover;
-    }
-}
-
-@media (max-width:1024px) and (orientation:portrait){
-    .account-info .info-content{
-        margin:0 auto;
-        margin-bottom: auto;
-    }
-    .account-info .title-top{
-        margin-bottom:2rem;
-        margin-top: auto;
-    }
-}
 @media (max-width:1366px) and (max-height:650px) and (orientation:landscape){
     .account-info .title-top{
         font-size: 1.7rem;
-    }
-    body.account-info{
-        background-position: 0;
     }
 }
 @media (max-width:992px) {
     .account-info .title-top{
         font-size: 1.6rem;
-        margin: 0 auto;
-        padding: 1rem;
-        padding-top: 3rem;
-    }
-}
-@media (max-width:992px) and (orientation:landscape){
-    body.account-info {
-        background-size: cover;
-    }
-    .account-info .info-content{
-        padding: 1rem .5rem;
-        margin-top: auto;
-    }
-    .account-info .title-top{
-        padding-top: 1rem;
     }
 }
 @media (max-width:767px) {
     .account-info .title-top{
         font-size: 1.2rem;
     }
-}
-@media (max-width:768px) and (orientation:portrait){
- body.account-info {
-     background-size:contain;
- }   
 }
 
 
